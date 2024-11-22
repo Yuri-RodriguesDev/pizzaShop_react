@@ -14,7 +14,7 @@ export async function registerRestaurant({
   phone,
 }: RegisterRestaurantBody) {
   // função que esta tipando o axios e trazendo requisições
-  await api.post('/restaurante', {
+  await api.post('/restaurants', {
     restaurantName,
     managerName,
     email,
