@@ -14,7 +14,7 @@ import { z } from "zod";
 import { toast } from "sonner";
 import { Link, useNavigate} from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
-import { registerRestaurant } from "@/api/register-restaurantts";
+import { registerRestaurant } from "@/api/register-restaurant";
 
 const signUpForm = z.object({
   //quando o usuario fizer o submit, o data vai ser um objeto
@@ -27,6 +27,7 @@ const signUpForm = z.object({
 type SignUpForm = z.infer<typeof signUpForm>; // covertendo a estrutura do zod para o typeScript
 
 export function SignUp() {
+
   const navigate = useNavigate();
   const {
     register,

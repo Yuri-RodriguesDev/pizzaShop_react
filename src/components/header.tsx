@@ -1,8 +1,9 @@
-import { Home, Pizza, UtensilsCrossed } from "lucide-react";
-import { Navlink } from "./nav-link";
-import { Separator } from "./ui/separator";
-import { ThemeToggle } from "./theme/theme-toggle";
-import { AccountMenu } from "./account-menu";
+import { Home, Pizza, UtensilsCrossed } from "lucide-react"
+//import { Link } from "react-router-dom"
+import { Navlink } from "./nav-link"
+import { Separator } from "./ui/separator"
+import { ThemeToggle } from "./theme/theme-toggle"
+import { AccountMenu } from "./account-menu"
 
 
 export function Header() {
@@ -31,6 +32,6 @@ export function Header() {
 
             </div>
         </div>
-    );
+    )
 }
 // <ThemeToggle/>  modo dark

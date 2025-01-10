@@ -10,6 +10,6 @@ export interface GetManagedRestaurantResponse {
 }
 
 export async function getManagedRestaurant ()  { // função que esta tipando o axios e trazendo requisições 
-    const response = await api.get<GetManagedRestaurantResponse>('/managed-restaurante')
+    const response = await api.get<GetManagedRestaurantResponse>('/managed-restaurant')
     return response.data
 }
